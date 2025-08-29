@@ -10,48 +10,132 @@ body {
 /*titulo y parte superior*/
 header {
     text-align: center;
-    padding: 4px    ;
+    padding: 4px;
     color: white;
     background-color: navy;
 }
 
 /*parte superior*/
 .contenido1 {
-  display: grid;
-  grid-template-columns: 1fr 3fr; 
-  column-gap: 24px;
-  row-gap: 24px;
-  align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 24px;
+    row-gap: 24px;
+    align-items: start;
 }
 
-.left .bullets{
-  margin: 6px 0 0 18px;
-  padding: 0;
+.left .bullets {
+    margin: 6px 0 0 18px;
+    padding: 0;
 }
 
-.left .bullets li{ 
-    margin: 8px 0; 
+.left .bullets li {
+    margin: 8px 0;
 }
 
-.right, .contenido1{
-  text-align: justify;
-  line-height: 1.65;
+.right,
+.contenido1 {
+    text-align: justify;
+    line-height: 1.65;
 }
 
 /* parte inferior */
 .contenido2 {
-  margin-top: 24px;
-  padding: 12px;
+    margin-top: 24px;
+    padding: 12px;
 }
 
-.subtitulo{
-     color: #666666; margin: 0 0 16px; 
-     font-size: medium;
+.subtitulo {
+    color: #666666;
+    margin: 0 0 16px;
+    font-size: medium;
 }
 
-.two-col{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
 }
 
+/*-------------------------------------------botones-----------------------------------------*/
+
+/*cambiar titulo*/
+#btnModTitulo {
+    display: block;
+    margin: 18px auto 24px auto;
+    padding: 10px 24px;
+    font-size: 1rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#btnModTitulo:hover {
+    background-color: rgb(1, 1, 106);
+}
+
+/*modificar vista de contenido*/
+
+.two-col.stacked {
+  grid-template-columns: 1fr; 
+}
+
+#btnModVista {
+    display: block; 
+    margin: 18px 0 24px 0;
+    padding: 10px 24px;
+    font-size: 1rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#btnModVista:hover {
+    background-color: rgb(1, 1, 106);
+}
+
+/*agregar imagen*/
+#btnAggImagen {
+    display: block;
+    margin: 18px 0 24px 0;
+    padding: 10px 24px;
+    font-size: 1rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#btnAggImagen:hover {
+    background-color: rgb(1, 1, 106);
+}
+#imgContainer img.extra-image{
+  display: block;
+  margin-top: 16px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/*boton de modificar descripcion*/
+#btnModContenido {
+    display: block;
+    margin: 18px 0 24px 0;
+    padding: 10px 24px;
+    font-size: 1rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#btnModContenido:hover {
+    background-color: rgb(1, 1, 106);
+}
