@@ -68,3 +68,23 @@ function insertImage(src){
   }
   img.src = src;
 }
+
+/*boton de modificar color de descripcion*/
+document.getElementById("btnModContenido").addEventListener("click", () => {
+  let input = document.createElement("input");
+  input.type = "color";
+  input.value = "#666666";
+  input.style.position = "fixed";
+  
+  document.body.appendChild(input);
+
+  input.click();
+
+  input.oninput = () => {
+    document.querySelector(".right h2").style.color = input.value;
+    document.body.removeChild(input);
+  };
+  input.onblur = () => {
+    document.body.removeChild(input);
+  };
+});
